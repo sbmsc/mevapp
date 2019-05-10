@@ -1,0 +1,29 @@
+{
+  "name": "mev-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbmsc/mevapp.git"
+  },
+  "author": "sbmsc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sbmsc/mevapp/issues"
+  },
+  "homepage": "https://github.com/sbmsc/mevapp#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongodb": "^3.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
