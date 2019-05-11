@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 //port
-app.set("port", process.env.PORT || 5000);
+app.set("port", process.env.PORT || 9899);
 
 // Start node server
 app.listen(app.get("port"), function() {
