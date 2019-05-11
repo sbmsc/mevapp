@@ -21,6 +21,10 @@ if (process.env.NODE_ENV === "production") {
   app.get(/.*/, (req, res) => res.sendFile(__dirname + "/public/index.html"));
 }
 
-const port = process.env.PORT || 5000;
+//port
+app.set("port", process.env.PORT || 5000);
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
+// Start node server
+app.listen(app.get("port"), function() {
+  console.log("Node server is running on port " + app.get("port"));
+});
