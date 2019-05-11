@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",
-    "dev": "nodemon server/index.js",
-    "build:staging": "env-cmd .env.staging npm run build"
+    "dev": "nodemon server/index.js"
   },
   "repository": {
     "type": "git",
